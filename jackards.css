@@ -1,0 +1,143 @@
+body {
+    background-image: url(res/img/style/mtg_background.png);/* Added MTG Background Image */
+    background-attachment: fixed;
+    font-size: 16px;
+    color: white;
+}
+
+a {
+    color: black;
+}
+/* Added mouse hover */
+a:hover {
+    color: orange;
+}
+
+button {
+    background-color: #3f3f3f;
+    color: #df7f7f;
+}
+
+footer {
+    background-color: brown;
+    font-size: 14px;
+    color: white;
+    margin-top: 32px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px; /*Make the footer edges round */
+}
+
+.card {
+    width: 192px;/*Changed the size of cards */
+}
+
+.card_box {
+    display: inline-block;
+    padding-bottom: 16px;
+    padding-right: 16px;
+}
+
+.card_name {
+    display: block;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_price {
+    color: brown;
+    display: block;
+    font-weight: bolder;
+}
+
+.full_centered {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.link {
+    background-color: #4a2121;/* added color to background */
+    color: white;
+    float: right;
+    padding: 3px; /*modified */
+    text-decoration: none;
+    border-radius: 5px;/* added round boder to the link*/
+}
+
+.message_error {
+    background-color: #df7f7f;
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.message_ok {
+    background-color: aqua;
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#container {
+    background-color: white;
+    background: rgba(255,255,255,0.6);
+    margin-bottom: 32px;
+    /*margin-top: 32px; not needed*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 10px; /*Round every square shape 10px 10px 10px 10px*/
+}
+
+#formy {
+    background-color: brown; /*Changed Color */
+    color: white; /*Changed the color for a better visibility */
+    display: inline-block; 
+    padding: 32px;
+    border-radius: 10px;
+}
+
+#header {
+    background-image: url(res/img/style/mtg_header.jpg);/* Added MTG Header Image */
+    background-position-y: 0px;
+    background-position-x: -40px;
+    padding: 30px;
+    border-radius: 10px 10px 0px 0px; /*Make the header edges round */ 
+}
+
+#header_message {
+    margin-top: 16px;
+    text-align: center;
+    border-radius: 7px; /* round edges to the header message */
+}
+
+#profile {
+    /*background-color: #3f3f3f; */
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+#search_bar {
+    margin-top: 16px;
+    text-align: center;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+}
+/*
+#title {
+    font-size: 32px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+} 
+
+    The title is no more in use
+
+*/
