@@ -65,7 +65,7 @@
                         $card_name_statement->bind_result($image_path);
                         $card_name_statement->fetch();
                         $card_name_statement->close();
-                        $image_path = "res/img/" . $image_path;
+                        $image_path = "res/img/card/" . $image_path;
 
                         echo "<div class='card_box'>";
 
