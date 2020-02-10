@@ -41,7 +41,8 @@
             </div>
 
             <div class="full_centered" id="container">
-                <h1>My Cards:</h1><!--Added sub_title here -->
+                <h1>My Cards:</h1>
+
                 <?php
                     $card_statement = $connection->prepare(
                         "select id, name, price from card where owner = ?");

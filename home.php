@@ -16,7 +16,7 @@
         <div id="container">
             <div id="header">
                 <?php
-                    if (isset($_SESSION["id"])) { // isset()method is needed 
+                    if (isset($_SESSION["id"])) { // isset()method is needed
                         echo "<a class='link' href='logout.php'> Logout </a>";
                         echo "<a class='link' href='profile.php'> Profile";
                         echo "</a>";
@@ -33,7 +33,7 @@
 
                     include("title.php");
                 ?>
-                <form id="search_bar">
+                <form action="show_cards.php" id="search_bar" method="post">
                     <input name="search" placeholder="Type a card name."
                      type="search">
                     <input type="submit" value="Search">
@@ -60,13 +60,13 @@
                                                            "card");
                     $card_statement->execute();
                     $card_result = $card_statement->get_result();
-            
+
                     while ($row = $card_result->fetch_assoc()) {
                         $card_id = $row["id"];
                         $card_name = $row["name"];
                         $card_price = $row["price"];
                         $card_owner = $row["owner"];
-            
+
                         $card_name_statement = $connection->prepare(
                             "select image_path from card_name where id = ?");
                         $card_name_statement->bind_param("s", $card_name);
@@ -76,7 +76,7 @@
                         $card_name_statement->fetch();
                         $card_name_statement->close();
                         $image_path = "res/img/" . $image_path;
-            
+
                         $owner_statement = $connection->prepare(
                             "select username from `user` where id = ?");
                         $owner_statement->bind_param("i", $card_owner);
@@ -85,24 +85,24 @@
                         $owner_statement->bind_result($owner_username);
                         $owner_statement->fetch();
                         $owner_statement->close();
-            
+
                         echo "<div class='card_box'>";
-            
+
                         echo "<label class='card_name'> $card_name </label>";
-            
+
                         echo "<img alt='$card_name' class='card'";
                         echo "src='$image_path'> <br>";
-            
+
                         echo "<label class='card_price'> $ $card_price";
                         echo "</label>";
-            
+
                         echo "<a class='card_owner' ";
                         echo "href='profile.php?id=$card_owner'>";
                         echo "$owner_username </a>";
-            
+
                         echo "</div>";
                     }
-            
+
                     $card_statement->close();
                 ?>
             </div>

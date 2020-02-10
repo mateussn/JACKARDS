@@ -2,12 +2,8 @@
     session_start();
     include_once("connect.php");
 
-    // To prevent MySQL injection.
-    $username = stripcslashes($username);
-    $password = stripcslashes($password);
-
-    $username = $connection->real_escape_string($_POST["username"]);
-    $password = $connection->real_escape_string($_POST["password"]);
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
     $statement = $connection->prepare("select id from `user` where username " .
                                       "= ? and password = ?");

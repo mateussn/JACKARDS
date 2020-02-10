@@ -54,7 +54,7 @@
 
                             if ($result->num_rows > 0) {
                                 while ($row = $result->fetch_row()) {
-                                    echo "<option value='" . $row[0] . "'>";
+                                    echo '<option value="' . $row[0] . '">';
                                     echo $row[0] . "</option>";
                                 }
                             }

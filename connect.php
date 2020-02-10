@@ -1,7 +1,7 @@
 <?php
-	$server = 'localhost:3306';
+	$server = 'localhost';
 	$user = 'root';
-	$password = '';
+	$password = 'dolphin';
 	$db_name = 'jackards_db';
 
     try {

@@ -32,6 +32,7 @@ create table if not exists card (
     name char(64) not null,
     price decimal(6, 2) not null,
     owner int not null,
+    fulltext(name),
     primary key(id),
     foreign key(name) references card_name(id),
     foreign key(owner) references `user`(id)

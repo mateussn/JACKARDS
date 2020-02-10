@@ -34,7 +34,8 @@
             </div>
 
             <div class="full_centered">
-                <h1>REGISTER USER</h1> <!--Added sub_title here -->
+                <h1>REGISTER USER</h1>
+
                 <form action="register_user_action.php" id="formy"
                  method="post">
                     Name: <input name="name" type="text"> <br>
