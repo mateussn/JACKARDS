@@ -26,12 +26,9 @@
                         echo "Register Card </a>";
                         echo "<a class='link' href='home.php'> Home </a>";
                     }
-                    elseif (isset($_GET["id"])) {
+                    else {
                         echo "<a class='link' href='login.php'> Login </a>";
                         echo "<a class='link' href='home.php'> Home </a>";
-                    }
-                    else {
-                        header("Location: home.php");
                     }
 
                     include("title.php");
