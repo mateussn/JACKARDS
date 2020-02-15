@@ -62,7 +62,7 @@
                     </select>
                     <br>
 
-                    Card Price: <input name="price" type="text">
+                    Card Price: <input name="price" required type="text">
                     <input id="submit" type="submit" value="Choose">
                 </form>
             </div>

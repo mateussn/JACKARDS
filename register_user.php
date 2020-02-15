@@ -38,11 +38,11 @@
 
                 <form action="register_user_action.php" id="formy"
                  method="post">
-                    Name: <input name="name" type="text"> <br>
-                    Username: <input name="username" type="text"> <br>
-                    E-Mail: <input name="e_mail" type="email"> <br>
-                    Phone Number: <input name="phone" type="text"> <br>
-                    Password: <input name="password" type="password"> <br>
+                    Name: <input name="name" required type="text"> <br>
+                    Username: <input name="username" required type="text"> <br>
+                    E-Mail: <input name="e_mail" required type="email"> <br>
+                    Phone Number: <input name="phone" required type="text"> <br>
+                    Password: <input name="password" required type="password"> <br>
                     <br>
                     <input id="submit" type="submit" value="Register">
                 </form>

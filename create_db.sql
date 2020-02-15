@@ -1,4 +1,4 @@
-# drop database if exists jackards_db;
+drop database if exists jackards_db;
 
 create database if not exists jackards_db
 default character set utf8mb4
