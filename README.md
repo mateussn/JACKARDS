@@ -1,4 +1,4 @@
-# JACKARDS
+# JACKARDS - A paradise of MAGIC GAME cards
 
 Programmers: 
 
